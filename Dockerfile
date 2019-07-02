@@ -1,2 +1,6 @@
 FROM openjdk:8-jdk-slim
-MAINTAINER silvio.netto@gmail.com
+MAINTAINER Silvio Netto <silvio.netto@gmail.com>
+RUN \
+	apt-get update \
+	&& apt-get -y install curl
+
